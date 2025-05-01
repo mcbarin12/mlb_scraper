@@ -91,8 +91,10 @@ def AAA_scrape(name, season):
     ).sort('proportion', descending=True)
 
     print(grouped_df)
+    grouped_df.to_csv("C:/Users/mbsur/Documents" + name + ".csv")
+    return grouped_df 
 
-AAA_scrape("Bobby Miller", 2024)
-scrape("Bobby Miller", 2024)
-
-AAA_scrape("Bubba Chandler", 2025)
+AAA_scrape("Jackson Jobe", 2024)
+AAA_scrape("Will Warren", 2024)
+AAA_scrape("AJ Smith-Shawver", 2024)
+AAA_scrape("Richard Fitts", 2024)
